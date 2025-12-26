@@ -1,10 +1,24 @@
 HELP.md
+
+# =====================
+# Maven / Spring Boot
+# =====================
 target/
 .mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
 
-### STS ###
+# =====================
+# IDEs
+# =====================
+# IntelliJ
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# VS Code
+.vscode/
+
+# STS / Eclipse
 .apt_generated
 .classpath
 .factorypath
@@ -13,21 +27,33 @@ target/
 .springBeans
 .sts4-cache
 
-### IntelliJ IDEA ###
-.idea
-*.iws
-*.iml
-*.ipr
+# =====================
+# Logs
+# =====================
+logs/
+*.log
 
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
+# =====================
+# OS junk
+# =====================
+.DS_Store
+Thumbs.db
+
+# =====================
+# Environment
+# =====================
+.env
+
+# =====================
+# Frontend (ONLY if present)
+# =====================
+node_modules/
+dist/
+dist-ssr/
 build/
-!**/src/main/**/build/
-!**/src/test/**/build/
-
-### VS Code ###
-.vscode/
+*.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
